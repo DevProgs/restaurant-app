@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <!-- Custom Fonts -->
+       <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+       <!-- Font Awesome -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <nav>
+            <div class="banner-text">
+                <h1 class="business">Jimmy's Diner</h1>
+                <p class="description">The best burgers and pizzas in town.</p>
+            </div>
+        </nav>
+
+        <main class="mobile-menu"></main>
+            
+        <section class="checkout">
+            <h2 class="checkout-heading">Your Order</h2>
+            <div class="checkout-details"></div>
+            <div class="checkout-divider"></div>
+        </section>
+            
+        <section class="total-section">
+            <p class="total-header">Total Price:</p>
+            <div class="total-div">
+            </div>
+        </section>
+        
+        <div class="center-btn">
+            <button data-order="order" class="order-btn">Complete Order</button>
+        </div>
+
+        <div class="modal">
+            <div class="modal-close-container">
+                <button data-close="test" class="modal-close">X</button>
+            </div>
+            <h2>Enter card details</h2>
+            <form data-test class="modal-checkout">
+                <input
+                    class="modal-info"
+                    type="text"
+                    name="fullName"
+                    placeholder="Enter Your Name"
+                    aria-label="Full Name"
+                    required/>
+
+                <input
+                    class="modal-info"
+                    type="text"
+                    name="creditCardNumber"
+                    placeholder="Enter card number"
+                    aria-label="Credit Card Number"
+                    required/>
+
+                <input
+                    class="modal-info"
+                    type="text"
+                    name="CVV"
+                    placeholder="Enter CVV number"
+                    aria-label="Credit Card Security Code"
+                    required/>
+                <button type="submit" class="modal-pay">PAY</button>
+            </form>
+        </div>
+        <section class="order-complete">
+            <div class="order-complete-text"></div>
+        </section>
+    </body>
+	<script src="index.js" type="module"></script>
+</html>
+
